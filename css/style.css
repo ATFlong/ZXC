@@ -1,0 +1,104 @@
+body{
+height: 100%;
+background: url("../img/lox.png")   no-repeat center/ cover;
+-webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
+	-moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
+	box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
+margin: 0 0;
+
+}
+.preview {
+background: url("https://cdn.lifehacker.ru/wp-content/uploads/2020/04/08_Zoom_W3_Wallpapers_Template_1920x1080_8j8xehqh1ri1ftr1_1588254616.jpg") no-repeat center/ cover;
+
+width: 300px;
+margin: 0 1150px;
+box-shadow: 0 5px 10px
+#000000;
+font-family: auto;
+border-radius: 10px;
+padding: 25px;
+ line-height: 1.5;
+color: #fff;
+text-shadow: 2px 2px #122e18;
+text-align: center;
+font-size: 10px;
+animation-name: preview;
+animation-duration: 3s;
+position: relative;
+animation-timing-function: linear;
+}
+
+.Spisok {
+margin: 0 1100px;
+width: 400px;
+font-size: 18px;
+color: #f5f5f5;
+font-family: cursive;
+animation-name: Spisok;
+padding-top: 200px;
+text-shadow: 1px 1px #122e18;
+animation-duration: 2s;
+animation-timing-function: linear;
+
+
+       }
+@keyframes preview{
+  0% {
+  right:  1150px;
+}
+50% {
+  border-radius: 50%;
+}
+  100% {
+  right: 10px;
+  }
+}
+a:hover {
+  color: white;
+}
+
+@keyframes Spisok {
+  0%{
+     text-decoration: none;
+  }
+
+  50%{
+text-decoration: overline;
+
+
+  }
+100%{
+
+  text-decoration: underline;
+}
+}
+a {
+  color: white;
+}
+.b {
+  position: relative;
+  height: 60px;
+background: url("../img/lox.png")   надо пределать no-repeat center/ cover;
+transition:all 300ms ease 0;
+}
+.b:before
+{
+  content:'';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  right:50%;
+  height:6px;
+  background:#000000;
+  transition: all .9s;
+  width: 0;
+}
+
+.b:hover:before
+{
+  background:#faf4f4;
+  left:0;
+  right:0;
+  width: 100%;
+}
